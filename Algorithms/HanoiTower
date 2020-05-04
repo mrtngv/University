@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+void moveTour(int n,char from,char to,char help){
+if(n>1){
+    moveTour(n-1,from,help,to);
+    cout<<"Местя диск от "<<from<<" на "<<to<<"\n";
+    moveTour(n-1,help,to,from);
+
+}
+else
+    cout<<"Местя диск от "<<from<<" на "<<to<<"\n";
+}
+
+int main()
+{
+    moveTour(4,'G','E','O');
+    return 0;
+}

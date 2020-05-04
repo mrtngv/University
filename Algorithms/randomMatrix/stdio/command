@@ -1,0 +1,4 @@
+#! /bin/bash
+./a.out<input>>output.txt
+sleep 5
+rm output.txt

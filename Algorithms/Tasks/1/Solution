@@ -1,0 +1,145 @@
+1----------------------------------
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int x,y,i,j,p;
+    cin>>x;
+    int* A = new int[x];
+    for(i=0;i<x;i++)
+        cin>>A[i];
+    cin>>y;
+    int*B = new int[y];
+    vector<int> C;
+    for(i=0;i<y;i++)
+        cin>>B[i];
+    sort(A,A+x);
+
+    for(i=0;i<x;i++){
+        for(j=0;j<y;j++){
+            if(A[i]==B[j]&&!count(C.begin(),C.end(),A[i])){
+                C.push_back(A[i]);
+                break;
+            }
+        }
+
+    }
+    if(C.size()==0)
+        cout<<0;
+    else{
+    for(i=0;i<C.size();i++){
+    cout<<C[i]<<" ";
+
+    }
+}
+
+    return 0;
+}
+
+
+
+2-----------------------------------------
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+void heapify(int *arr, int n, int i)
+{
+    int smallest = i;
+    int l = 2 * i + 1;
+    int r = 2 * i + 2;
+
+    if (l < n && arr[l] < arr[smallest])
+        smallest = l;
+
+    if (r < n && arr[r] < arr[smallest])
+        smallest = r;
+
+    if (smallest != i) {
+        swap(arr[i], arr[smallest]);
+        heapify(arr, n, smallest);
+    }
+}
+
+void heapSort(int *arr, int n)
+{
+
+    for (int i = n / 2 - 1; i >= 0; i--)
+        heapify(arr, n, i);
+
+    for (int i = n - 1; i >= 0; i--) {
+        swap(arr[0], arr[i]);
+        heapify(arr, i, 0);
+    }
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    int *arr = new int[n];
+    for(int i=0;i<n;i++)
+        cin>>arr[i];
+
+    heapSort(arr, n);
+    for(int i=0;i<n;i++)
+        cout<<arr[i]<<" ";
+
+return 0;
+}
+
+
+3---------------------------------
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n;
+    int i,j,buff,g;
+    cin>>n;
+    int * arr=new int[n];
+    for(i=0;i<n;i++)
+        cin>>arr[i];
+
+    for (i = 0; i <= n/2-1; i++)
+    {
+        buff=i;
+        for (j = i+1; j < n; j++)
+        if (arr[j] < arr[buff])
+            buff = j;
+
+        g=arr[buff];
+        arr[buff] = arr[i];
+        arr[i] = g;
+    }
+
+    for (; i < n-1; i++)
+    {
+        buff=i;
+        for (j = i+1; j < n; j++)
+        if (arr[j] > arr[buff])
+            buff = j;
+
+        g=arr[buff];
+        arr[buff] = arr[i];
+        arr[i] = g;
+    }
+
+    for(i=0;i<n;i++)
+        cout<<arr[i]<<" ";
+
+    return 0;
+}

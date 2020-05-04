@@ -1,0 +1,266 @@
+#include <iostream>
+#define COUNT 10
+using namespace std;
+int countera = 0;
+int flag=0;
+int c = 0;
+struct Node {
+   int data;
+   struct Node *left;
+   struct Node *right;
+
+};
+
+void deleteBSTNode(struct Node* po,struct Node*bo){
+    if(po==NULL){
+        flag = 1;
+        return;
+        }
+        deleteBSTNode(po->left,po);
+    if(flag==1){
+
+        if(po->right!=NULL)
+            bo->left=po->right;
+
+            c = po->data;
+            delete po;
+            flag=0;
+            }
+
+
+
+}
+
+
+//Тази функция проверява дали даден елемент го има в дървото , дали е листо , родител на 1 дете или родител на 2 деца;
+int findCaseDeleteBSTNode(struct Node* po,int data1){
+    if(po==NULL)
+        return 0;
+    else if(po->data==data1){
+        if(po->left==NULL&&po->right==NULL)
+            return 1;
+        else if(po->left!=NULL&&po->right!=NULL){
+            deleteBSTNode(po->right,po);
+            po->data = c;
+            return 3;
+            }
+        else
+            return 2;
+    }
+    else{
+        if(po->data>data1)
+            findCaseDeleteBSTNode(po->left,data1);
+        else
+            findCaseDeleteBSTNode(po->right,data1);
+
+    }
+}
+
+
+
+
+struct Node* insertNodeBST(struct Node* po,int data1){
+    countera++;
+    if(po==NULL){
+    struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
+
+
+    new_node->data = data1;
+    new_node->left=NULL;
+    new_node->right = NULL;
+    return new_node;
+    }
+
+
+    else{
+        if(po->data==data1)
+            cout<<"Вече съществува "<<countera<<" на брой проверки \n"<<"\n";
+        else if(po->data<data1){
+            if(po->right==NULL){
+            cout<<countera<<" на брой проверки \n";
+            po->right=insertNodeBST(po->right,data1);
+            }
+            else insertNodeBST(po->right,data1);
+
+            }
+        else{
+            if(po->left==NULL){
+            po->left=insertNodeBST(po->left,data1);
+            cout<<countera<<" на брой проверки \n";
+            }
+            else
+            insertNodeBST(po->left,data1);
+
+            }
+
+
+
+    }
+
+    countera =0;
+
+}
+
+struct Node* makeBST(int n){
+struct Node* root = (struct Node*) malloc(sizeof(struct Node));
+    int data1;
+    cout<<"Enter data --> ";
+    cin>>data1;
+    root->data = data1;
+
+    for(int i=0;i<n-1;i++){
+    cout<<"Enter data --> ";
+    cin>>data1;
+
+    insertNodeBST(root,data1);
+}
+return root;
+
+
+
+
+}
+
+
+
+struct Node* makeInfix(int n){
+    if(n<=0)return NULL;
+    struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
+
+    new_node->left = makeInfix(n/2);
+
+    int data1;
+    cout<<"Enter data --> ";
+    cin>>data1;
+    new_node->data = data1;
+
+    new_node->right = makeInfix(n-(n/2)-1);
+
+    return new_node;
+}
+
+
+struct Node* make(int n){
+    if(n<=0)return NULL;
+    struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
+    int data1;
+    cout<<"Enter data --> ";
+    cin>>data1;
+    new_node->data = data1;
+    if(n==1){
+        new_node->left= NULL;
+        new_node->right = NULL;
+        return new_node;
+
+    }
+
+    new_node->left = make(n/2);
+    new_node->right = make(n-(n/2)-1);
+
+    return new_node;
+}
+
+void infix(struct Node* po){
+    if(po==NULL)
+        return;
+    infix(po->left);
+    cout<<po->data<<" ";
+    infix(po->right);
+}
+
+void prefix(struct Node*po){
+    if(po!=NULL)
+        cout<<po->data<<" ";
+    else
+        return;
+
+
+    prefix(po->left);
+    prefix(po->right);
+
+}
+
+void postfix(struct Node*po){
+    if(po==NULL)
+        return;
+    postfix(po->left);
+    postfix(po->right);
+    cout<<po->data<<" ";
+
+
+}
+
+
+
+int heightIBD(struct Node* po){
+    int height =0;
+    while(po->left!=NULL){
+        height++;
+        po=po->left;
+    }
+    height++;
+    return height;
+
+}
+void printTree(struct Node *root, int space)
+{
+    if (root == NULL)
+        return;
+
+    space += COUNT;
+
+    printTree(root->right, space);
+
+    cout<<endl;
+    for (int i = COUNT; i < space; i++)
+        cout<<" ";
+    cout<<root->data<<"\n";
+
+
+   printTree(root->left, space);
+}
+int main() {
+/*
+  struct Node* po = make(12);
+  printIBD(po,0);
+  cout<<"\n\nINFIX:   ";
+  infix(po);
+  cout<<"\nPREFIX:  ";
+  prefix(po);
+  cout<<"\nPOSTFIX: ";
+  postfix(po);
+  cout<<"\n\n";
+
+  po = makeInfix(12);
+  printIBD(po,0);
+  cout<<"\n\nINFIX:   ";
+  infix(po);
+  cout<<"\nPREFIX:  ";
+  prefix(po);
+  cout<<"\nPOSTFIX: ";
+  postfix(po);
+  */
+  struct Node* po = makeBST(10);
+  printTree(po,0);
+  cout<<"\n\nINFIX:   ";
+  infix(po);
+  /*
+  cout<<"\n";
+  po=makeInfix(8);
+  printTree(po,0);
+  */
+/*
+
+  int abc =0;
+  for(int i=0;i<3;i++){
+  cin>>abc;
+  abc=findCaseDeleteBSTNode(po,abc);
+  cout<<abc;
+  printTree(po,0);
+  }
+
+
+
+*/
+   return 0;
+}

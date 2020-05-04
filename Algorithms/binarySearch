@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int index = -1;
+
+void recursive_dihotomichno_tursene(int*A,int d,int g,int target){
+    int s = (d+g)/2;
+    if(d<=g){
+        if(A[s]==target){
+            index = s;
+        }
+        else{
+            if(A[s]>target)
+                recursive_dihotomichno_tursene(A,d,s-1,target);
+
+            else
+                recursive_dihotomichno_tursene(A,s+1,g,target);
+
+        }
+    }
+
+    else{
+        cout<<"Това число не принадлежи на множеството\n";
+    }
+
+}
+
+int main()
+{
+    int lenght=20;
+    int *arr = new int[lenght];
+    cout<<"В това множество са първите 20 нечетни положителни числа\n";
+    for(int i=0;i<lenght;i++){
+        arr[i] = (2*i)+1;
+        cout<<arr[i]<<"  ";
+    }
+    cout<<"\n";
+    recursive_dihotomichno_tursene(arr,0,19,6);
+    cout<<"Индекса на търсеното от нас число е: -->"<<index;
+    return 0;
+}

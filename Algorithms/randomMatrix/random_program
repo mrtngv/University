@@ -1,0 +1,7 @@
+#! /bin/bash
+echo "Въведи колко случайни числа искаш ;)"
+echo "Да са повече от 12*12"
+./input.out | ./random.out >file.txt
+
+
+

@@ -1,0 +1,130 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+    static Scanner in = new Scanner(System.in);
+    public static int[] valid_input(){
+        //В задачата не е дадено като условие, че bottom i top както и difference са цели положителни числа
+        //Има изискване само изхода да се състои от цели положителни числа в затворения интервал [top,bottom]
+        //За difference : Ако < 0 ще е модул от него. т.е. *(-1)
+        int top,bottom,difference;
+
+        System.out.print("Enter bottom ===> ");
+        bottom = in.nextInt();
+        if(bottom<0){
+            System.out.println("Автоматично правя bottom = 0");
+            bottom =0;
+        }
+
+        System.out.print("Enter top ===> ");
+        top = in.nextInt();
+        if(top<0){
+            System.out.println("Автоматично правя top = 0");
+            top =0;
+        }
+        if(top<bottom){
+            System.out.println("top е по-малко от bottom\nНевалиден вход!");
+        }
+
+        System.out.print("Enter difference ===> ");
+        difference = in.nextInt();
+        if(difference<0){
+            System.out.println("За difference взимам неговия модул");
+            difference*=-1;
+        }
+
+        int num[] = new int[3];
+        num[0] = bottom;
+        num[1] = top;
+        num[2] = difference;
+
+
+        return num;
+    }
+
+    public static int first_last(int number){
+        int n = 0;
+        int umnojenie = 10;
+        String string_number = String.valueOf(number);
+        for(int i = string_number.length()-1;i>0;i--){
+            n+= Integer.parseInt(String.valueOf(string_number.charAt(i))) * umnojenie;
+            umnojenie*=10;
+
+        }
+        n+= Integer.parseInt(String.valueOf(string_number.charAt(0)));
+
+    return n;
+    }
+
+
+    public static int fun1(){
+        System.out.println("Задача 1:");
+        int counter = 0; // за да е по-функционална ф-ията ще връща колко числа в този интервал съществуват
+        int input[] = valid_input();
+        int temp;
+        int plus;
+
+        if(input[1]<input[0])//случая когато top<bottom, може да се направи по-добре , защото правя 2 еднакви проверки в тази функиця и ф-ията валидатор
+            return 0;
+
+        for(int i = input[0];i<=input[1];i++){
+            if(i-first_last(i)>=input[2]) {
+                System.out.println(i + "  " + first_last(i) + " => " + i + " - " + first_last(i) + " = " + (i-first_last(i)) + " > " + input[2]);
+                counter++;
+            }
+            else if(first_last(i)-i>=input[2]){
+                System.out.println(i + "  " + first_last(i) + " => " + i + " - " + first_last(i) + " = " + ((i-first_last(i))*-1) + " > " + input[2]);
+                counter++;
+            }
+
+        }
+
+        return counter;
+    }
+
+    public static void fun2(){
+        System.out.println("\n\nЗадача 2:");
+        System.out.print("Enter n ===> ");
+        int n =in.nextInt();
+        if(n==0) {
+            System.out.println("Nothing to display");
+            return;
+        }
+        if(n<0) {
+            System.out.println("Автоматично взимам |n|");
+            n *= -1;//по модула на числото
+        }
+
+        for(int i = 1 ;i<=n;i++){
+            for(int j=1;j<i;j++)//интервали
+                System.out.print(" ");
+            for(int j=i;j<=n;j++)
+                System.out.print(j);
+            for(int j =n;j>=i;j--)
+                System.out.print(j);
+            System.out.print("\n");
+        }
+
+        for(int i = 1 ;i<n;i++){
+            for(int j=n-1;j>i;j--)//интервали
+                System.out.print(" ");
+            for(int j=n-i;j<=n;j++)
+                System.out.print(j);
+            for(int j =n;j>=n-i;j--)
+                System.out.print(j);
+            System.out.print("\n");
+        }
+
+
+
+
+    }
+
+
+    public static void main(String[] args) {
+	    fun1();//може да връша броя на тези числа според input-а
+        fun2();//валидиран вход
+    }
+}
+

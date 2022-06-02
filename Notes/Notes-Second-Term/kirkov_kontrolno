@@ -1,0 +1,282 @@
+/*
+//            ТОВА ИЗЛИЗА В КОНЗОЛАТА :
+
+Kurabiikata e mnogo hubawa , bratle
+procentite za dneven dql sa ===>  5%
+Tq ne e izpechena <3
+Brashnoto i e ===>   goitno brashno
+Kurabiikata e mnogo hubawa , bratle
+procentite za dneven dql sa ===>  6%
+Izpechena e bratle <3
+Brashnoto i e ===>   goitno brashno
+
+16
+11
+6
+
+Kurabiikata e mnogo hubawa , bratle
+procentite za dneven dql sa ===>  5%
+Izpechena e bratle <3
+Brashnoto i e ===>   abcd brashno
+Tova e moderna kurabiika
+Tq ima samo 5% zahar,bratle <3
+Veganska e!!!!
+Ima formata na figura s 5 ugula
+Process returned 0 (0x0)   execution time : 0.028 s
+Press any key to continue.
+*/
+
+//-----------------------------------------------------------------------------------
+// MAIN.CPP
+#include <iostream>
+#include "kurab.h"
+#include "Forma.h"
+#include <cstring>
+#include "Modern.h"
+
+using namespace std;
+
+int main()
+{
+
+    kurab a(5, 0, "goitno brashno");
+    kurab b(10, 1, "mn qko brashno bratle");
+    a.print();
+    ++a;
+    a.set_izpecheno(1);
+    a.print();
+    cout << "\n";
+    cout << a + b;
+    cout << "\n";
+    cout << a + 5;
+    cout << "\n";
+
+    Forma u(6);
+    std::cout << u.get_ugli() << "\n";
+    std::cout << "\n";
+
+    Modern m(1, "abcd brashno", 5, 1);
+    m.print();
+
+    return 0;
+}
+
+//------------------------------------------------------------------------------
+// KURAB.H
+#ifndef KURAB_H
+#define KURAB_H
+
+class kurab
+{
+public:
+    kurab();
+    kurab(int, bool, char *);
+    virtual ~kurab();
+
+    bool get_izpecheno() const;
+    void set_izpecheno(bool);
+
+    void print() const;
+
+    kurab &operator++();
+    kurab &operator++(int);
+    int operator+(int) const;
+    int operator+(const kurab &) const;
+
+protected:
+private:
+    int procent;
+    bool izpechena;
+    char *brashno;
+};
+
+#endif // KURAB_H
+
+//----------------------------------
+// KURAB.CPP
+#include "kurab.h"
+#include <cstring>
+#include <iostream>
+
+kurab::kurab()
+{
+}
+
+kurab::~kurab()
+{
+}
+
+kurab::kurab(int p, bool i, char *b)
+{
+
+    procent = p;
+    izpechena = i;
+
+    brashno = new char[strlen(b) + 1];
+    strcpy(brashno, b);
+}
+
+bool kurab::get_izpecheno() const
+{
+    return izpechena;
+}
+void kurab::set_izpecheno(bool b)
+{
+
+    izpechena = b;
+}
+
+void kurab::print() const
+{
+
+    std::cout << "Kurabiikata e mnogo hubawa , bratle\nprocentite za dneven dql sa ===>  " << procent << "%\n";
+
+    if (izpechena == 0)
+    {
+
+        std::cout << "Tq ne e izpechena <3\n";
+    }
+
+    else
+    {
+
+        std::cout << "Izpechena e bratle <3\n";
+    }
+
+    std::cout << "Brashnoto i e ===>   " << brashno << "\n";
+}
+
+kurab &kurab::operator++()
+{
+
+    procent++;
+    return *this;
+}
+
+kurab &kurab::operator++(int)
+{
+
+    kurab tmp(procent, izpechena, brashno);
+    procent++;
+    return tmp;
+}
+
+int kurab::operator+(int a) const
+{
+    return procent + a;
+}
+int kurab::operator+(const kurab &a) const
+{
+
+    return procent + a.procent;
+}
+
+//-----------------------------------------------------------------------------------
+// FORMA.H
+
+#ifndef FORMA_H
+#define FORMA_H
+
+class Forma
+{
+public:
+    Forma(int = 0);
+    virtual ~Forma();
+
+    int get_ugli() const;
+
+protected:
+private:
+    int broi_ugli;
+};
+
+#endif // FORMA_H
+
+//--------------------------------------
+// FORMA.CPP
+#include "Forma.h"
+
+Forma::Forma(int a)
+{
+    broi_ugli = a;
+}
+
+Forma::~Forma()
+{
+}
+
+int Forma::get_ugli() const
+{
+
+    return broi_ugli;
+}
+
+//--------------------------------------------------------------------
+// MODERN.H
+#include "kurab.h"
+#include "Forma.h"
+
+#ifndef MODERN_H
+#define MODERN_H
+
+class Modern : public kurab, public Forma
+{
+public:
+    Modern(bool, char *, int, bool = 0);
+    virtual ~Modern();
+
+    void print();
+
+protected:
+private:
+    bool vegan;
+};
+
+#endif // MODERN_H
+
+//------------------------------------------------------------------
+// MODERN.CPP
+
+#include "Modern.h"
+#include "kurab.h"
+#include "Forma.h"
+#include <cstring>
+#include <iostream>
+
+Modern::Modern(bool i, char *b, int u, bool v) : kurab::kurab(5, i, b), Forma::Forma(u), vegan(v)
+{
+}
+
+Modern::~Modern()
+{
+}
+
+void Modern::print()
+{
+
+    kurab::print();
+
+    std::cout << "Tova e moderna kurabiika\nTq ima samo 5% zahar,bratle <3\n"
+              << ""
+              << "";
+
+    if (vegan == true)
+    {
+        std::cout << "Veganska e!!!!"
+                  << ""
+                  << "\n";
+    }
+
+    else
+    {
+
+        std::cout << "Ne e veganska,da jivee mesoto!!!"
+                  << ""
+                  << "\n";
+    }
+    std::cout << "Ima formata na figura s " << get_ugli() << " ugula";
+}
+
+//------------------
+// КРАЙ
+// РАЗШИРИЛ СЪМ ЛЕКО УСЛОВИЯТА 

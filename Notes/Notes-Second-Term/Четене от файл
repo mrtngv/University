@@ -1,0 +1,34 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main(){
+	ifstream input_data;
+	input_data.open("/home/some1/Desktop/input.txt");
+
+	string s;
+	int x;
+	char ch;
+
+	for(int  i =0;i<4;i++){
+	input_data >> s;
+	cout <<"Name: " << s << endl;
+	input_data >> s;
+	cout<<"Surname: "<<s<<endl;
+	input_data >> x ;
+	cout <<"age= " << x << endl;
+	input_data >> s;
+	if(s=="m"){
+        cout<<"male"<<endl;
+	}
+	else{
+        cout<<"female"<<endl;
+	}
+
+}
+
+	input_data.close();
+	return 0;
+}

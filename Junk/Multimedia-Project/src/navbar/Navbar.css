@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+.birds-background {
+    position:absolute;
+    top:0px;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1; /* Remove this line if it's not going to be a background! */
+}
+
+.photo img{
+    margin-top: 250px;
+    width: 12%;
+    margin-left: 100px;
+    transition: transform .2s; /* Animation */
+}
+
+.photo1 img{
+    margin-top: 80x;
+    width: 12%;
+    margin-left: 100px;
+    transition: transform .2s; /* Animation */
+}
+
+.photo img:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .photo1 img:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .photo1 img{
+    margin-top: 50px;
+    width: 12%;
+    margin-left: 100px;
+    transition: transform .2s; /* Animation */
+}
+
+.info {
+    position: absolute;
+    padding-right: 60px;
+    color: rgb(12, 29, 12);
+    width: 420px;
+    height: 600px;
+    top: 100px;
+    right: 40px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.topnav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+}
+
+.topnav a:hover {
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgba(255,105,180,0.4);
+}
+
+.title {
+    padding-top: 47px;
+    padding-left: 100px;
+}
+
+.video {
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 20px;
+    margin-right: 200px;
+}

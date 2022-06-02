@@ -1,0 +1,17 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main(){
+
+	ofstream output_data;
+	output_data.open("output.txt");
+	output_data.ate;
+	output_data << 10 << " " << 20 << "\n";
+	output_data<<"zdr";
+
+	output_data.close();
+	return 0;
+}

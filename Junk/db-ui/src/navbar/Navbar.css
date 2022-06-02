@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.sidenav {
+    display: inline;
+    float: left;
+}
+
+.right {
+    padding: 5rem;
+    display: flex;
+}
+
+.down {
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.sit{
+    padding-left: 2rem;
+}
+
+.go{
+    padding-bottom: 6px;
+}
+
+.t {
+}

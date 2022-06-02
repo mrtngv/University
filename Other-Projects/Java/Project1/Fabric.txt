@@ -1,0 +1,4 @@
+Total earnings: ----> 34235.0
+Total costs:----> 24892
+Ready entries are: [How to train your girlriend[69](pages)]
+Active orders are: [Order{entry=How to train your girlriend[69](pages), quantity=10, paperType=NEWSPAPER, orderID=2}]

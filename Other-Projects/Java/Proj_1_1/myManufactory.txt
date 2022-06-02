@@ -1,0 +1,14 @@
+Свободни Изпечатани издания
+1) Publishing: Publishing{title='Хрониките на Нарния: Лъвът, Вещицата и дрешникът', publishingFormat=BOOKS, publishingPages=320, cost=65.0, pageSize=A5} ---> 6
+2) Publishing: Publishing{title='Шерлок Холмс', publishingFormat=BOOKS, publishingPages=400, cost=77.0, pageSize=A5} ---> 5
+
+Продадени издания: 
+1) Publishing: Publishing{title='Спасителят в ръжта', publishingFormat=BOOKS, publishingPages=215, cost=65.0, pageSize=A5} ---> 25
+2) Publishing: Publishing{title='Гънка във времето', publishingFormat=BOOKS, publishingPages=150, cost=70.0, pageSize=A4} ---> 30
+
+Работници, които работят:
+1) Иван Иванов
+2) Костадин Табаков
+3) Мария Генова
+
+Total income: 2980.0     Total costs: 9564.4

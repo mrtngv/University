@@ -1,0 +1,151 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Kostadinova
+ */
+public class CITB408S2020Week1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        {
+            // Week 1 Task 1
+            System.out.println("----------- Task 1 -----------");
+            int threeDigitNumber = 765;
+            System.out.print(threeDigitNumber % 10 + " ");
+            System.out.print(threeDigitNumber / 10 % 10 + " ");
+            System.out.print(threeDigitNumber / 100 % 10 + " ");
+            System.out.println();
+        }
+        {
+            //Week 1 Task 2: 42 = 00101010, 44 = 00101100, 4 = 00000100
+            System.out.println("----------- Task 2 -----------");
+            int number2 = 42;
+            System.out.println(number2 & 4);
+        }
+        {
+            //Week 1 Task 3
+            System.out.println("----------- Task 3 -----------");
+            int number3 = 400;
+            number3 = (number3 > 200) ? (number3 - 100) : (number3 + 50);
+            System.out.println(number3);
+        }
+        {
+            //Week 1 Task 4
+            //To convert Celsius degrees to Fahrenheit degrees
+            System.out.println("----------- Task 4 -----------");
+            double fahrTemp = 78, celsiusTemp = 26;
+            fahrTemp = 9.0 / 5 * celsiusTemp + 32;
+
+            //To convert Fahrenheit degrees to Celsius degrees
+            celsiusTemp = 5.0 / 9 * (fahrTemp - 32);
+            System.out.println(fahrTemp);
+            System.out.println(celsiusTemp);
+        }
+        {
+            //Week 1 Task 5
+            System.out.println("----------- Task 5 -----------");
+            int n = 12;
+            System.out.println(n++);
+            System.out.println(++n);
+            System.out.println(n++ + 1);
+            System.out.println(++n + 1);
+            System.out.println(n + 1);
+            System.out.println(n);
+        }
+        {
+            //Week 1 Task 6
+            System.out.println("----------- Task 6 -----------");
+            double number6 = 7883.892732;
+            int intNumber = (int) (number6 * 100);
+            System.out.println(intNumber % 10);
+        }
+        {
+            //Week 1 Task 7
+            System.out.println("----------- Task 7 -----------");
+            int number1 = -25;
+            int number2 = 6;
+            int number3 = 6;
+            boolean expressionResult;
+            expressionResult = number1 % 5 == 0 && number1 % 3 != 0;
+            System.out.println("Subtask a) " + expressionResult);
+            expressionResult = number1 >= 6 && number1 <= 19;
+            System.out.println("Subtask b) " + expressionResult);
+            expressionResult = number1 > 19 || number1 <= 6;
+            System.out.println("Subtask c) " + expressionResult);
+            expressionResult = number1 > -10 && number1 <= -1 || number1 >= 2 && number1 < 14;
+            System.out.println("Subtask d) " + expressionResult);
+            expressionResult = number1 < 0 || number2 < 0 || number3 < 0;
+            System.out.println("Subtask e) " + expressionResult);
+            expressionResult = number1 == number2 && number1 == number3;
+            System.out.println("Subtask f) " + expressionResult);
+        }
+
+        {
+            //Week 1 Task 8
+            System.out.println("----------- Task 8 -----------");
+            int x1 = 1;
+            int x2 = 5;
+            int x3 = 4;
+            int y1 = 4;
+            int y2 = 1;
+            int y3 = 2;
+            boolean isTriangle;
+            double distancePoint1Point2 = Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+            double distancePoint1Point3 = Math.sqrt(Math.pow(x1 - x3, 2) + Math.pow(y1 - y3, 2));
+            double distancePoint2Point3 = Math.sqrt(Math.pow(x2 - x3, 2) + Math.pow(y2 - y3, 2));
+            isTriangle = distancePoint1Point2 + distancePoint1Point3 > distancePoint2Point3
+                    && distancePoint1Point2 + distancePoint2Point3 > distancePoint1Point3
+                    && distancePoint1Point3 + distancePoint2Point3 > distancePoint1Point2;
+            System.out.println(isTriangle);
+
+        }
+
+        {
+            //Week 1 Task 9
+            System.out.println("----------- Task 9 -----------");
+
+            double radius = 9.7;
+            double height = 3.4;
+
+            //Subtask a) surface area of a Cone
+            double areaCone = Math.PI * Math.pow(radius, 2) + Math.PI * radius * Math.sqrt(Math.pow(radius, 2 + Math.pow(height, 2)));
+            //Subtask a) volume of a Cone 
+            double volumeCone = (1.0 / 3) * Math.PI * Math.pow(radius, 2) * height;
+            System.out.println("The area of the Cone is: " + areaCone);
+            System.out.println("The volume of the cone is: " + volumeCone);
+
+            //Subtask b) surface area of a Cylinder
+            double areaCylinder = 2 * Math.PI * Math.pow(radius, 2) + 2 * Math.PI * radius * height;
+            //Subtask b) volume of a Cylinder	
+            double volumeCylinder = Math.PI * Math.pow(radius, 2) * height;
+            System.out.println("The area of the Cylinder is: " + areaCylinder);
+            System.out.println("The volume of the Cylinder is: " + volumeCylinder);
+
+            //Subtask c) surface area of a Sphere
+            double areaSphere = 4 * Math.PI * Math.pow(radius, 2);
+            //Subtask c) volume of a Sphere
+            double volumeSphere = (4.0 / 3) * Math.PI * Math.pow(radius, 3);
+            System.out.println("The area of the Sphere is: " + areaSphere);
+            System.out.println("The volume of the Sphere is: " + volumeSphere);
+        }
+
+        {
+            //Week 1 Task 10
+            System.out.println("----------- Task 10 -----------");
+            int year = 2016;
+            int leapYear = (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) ? year : -1;
+            System.out.println("The value of the leapYear is: " + leapYear);
+
+        }
+
+    }
+
+}

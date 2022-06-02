@@ -1,0 +1,19 @@
+int runningTime(vector<int> &arr) {
+    int i, j, tmp;
+    int sum=0;
+
+ for (i=1; i<arr.size(); i++)
+ {
+     j=i;
+     tmp=arr[i];
+     while (j>0 && tmp<arr[j-1])
+     {
+           arr[j]=arr[j-1];
+           j--;
+           sum++;
+     }
+     arr[j]=tmp;
+ }
+
+return sum;
+}

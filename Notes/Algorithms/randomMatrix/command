@@ -1,0 +1,3 @@
+#! /bin/bash
+./random.out<matrix_input.txt >file.txt
+./program.out < file.txt

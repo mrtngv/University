@@ -1,0 +1,154 @@
+/*
+Всички задачи са тествани и работят правилно,
+използвам функции , които съм писал сам,коити ползвам като допълнителни
+за да направя кода по-четим и разбираем и като добра практика.
+подходящи неща които съм използвал са рандом елементи за да запълня масив.
+Реализирал съм метода на мехурчето за 3-та задача и отделно Пряка селекция за 5-та.
+
+
+Функционалностите са разширени от това ,което се изисква , но смятам, че така е по -добре.
+
+Да се види main функцията
+там са и отговорите на въпросите.
+*/
+
+
+#include <iostream>
+#include <vector>
+#include <ctime>
+#include <algorithm>
+
+using namespace std;
+
+void fillArray(int*A,int N){
+for(int i=0;i<N;i++)
+    A[i] = (1+ rand() % 20);
+}
+int printArray(int * arr,int N){
+    for(int i=0;i<N;i++)
+        cout<<arr[i]<<" ";
+    cout<<"\n";
+}
+
+void mehurche1(int *A,int N){
+int buff,flag=1,i=0;
+
+while(flag){
+    flag=0;
+    for(int j=1;j<N-i;j++){
+        if(A[j-1]>A[j]){
+            buff = A[j-1];
+            A[j-1] = A[j];
+            A[j]= buff;
+            flag=1;
+        }
+        }
+        i++;
+    }
+}
+
+void sort4(int &p,int &q,int &r,int &s){
+
+    int* arr = new int[4];
+    arr[0] = s;
+    arr[1] = r;
+    arr[2] = q;
+    arr[3] = p;
+
+    mehurche1(arr,4);
+    s=arr[0];
+    r=arr[1];
+    q=arr[2];
+    p=arr[3];
+
+}
+
+vector<int> task4(int*A,int an,int*B,int bn){
+    vector<int> v;
+    int isThere = 0;
+    for(int i=0;i<an;i++){
+        for(int j=0;j<bn;j++){
+            if(A[i]==B[j]){
+                isThere = 1;
+                break;
+            }
+
+        }
+        if(isThere == 0){
+            if(std::find(v.begin(), v.end(), A[i]) != v.end()) {
+
+            }else{
+                v.push_back(A[i]);
+            }
+
+            }
+            isThere=0;
+    }
+    sort(v.begin(), v.end());
+    return v;
+}
+
+void sortArray(int *A,int N){
+for(int i=0;i<N-1;i++){
+    int maximium = A[i];
+    int flag = i;
+
+    for(int j=i+1;j<N;j++){
+        if(A[j]>maximium){
+            maximium = A[j];
+            flag = j;
+        }
+    }
+
+    A[flag] = A[i];
+    A[i] = maximium;
+}
+}
+
+
+int main()
+{
+    //Задача 1 - отговор Б n.log(n) средно
+    //Задача 2 - отговор Б - 5 защото е дихотомично търсене log(n)
+    cout<<"Задача 1 - отговор Б, n.log(n) средно\n";
+    cout<<"Задача 2 - отговор Б - защото е дихотомично търсене log(n)\n";
+    cout<<"\nTask 3\n";
+    //Задача 3
+    int p =2;
+    int q=6;
+    int r = 3;
+    int s =4;
+
+    sort4(p,q,r,s);
+
+    cout<<"p = "<<p<<"\n";
+    cout<<"q = "<<q<<"\n";
+    cout<<"r = "<<r<<"\n";
+    cout<<"s = "<<s<<"\n";
+
+    //Задача 4
+    cout<<"\nTask 4\n";
+    srand (time(NULL));
+    int N = 5;
+    int * A = new int[N];
+    int*B = new int[N];
+    fillArray(A,N);
+    fillArray(B,N);
+    cout<<"Array 1: ";
+    printArray(A,N);
+    cout<<"Array 2: ";
+    printArray(B,N);
+    vector<int> v = task4(A,N,B,N); //реализацията на функцията е че вектора вече е сортиран
+    cout<<"The numbers that is in A and not in B are: ";
+    for (auto x : v)
+        cout << x << " ";
+
+    //Задача 5
+    //сортирам A
+    cout<<"\n\nTask 5:\n";
+    cout<<"За примера просто сортирам А\n";
+    sortArray(A,N);
+    printArray(A,N);
+
+    return 0;
+}

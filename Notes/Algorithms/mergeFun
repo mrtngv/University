@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int a[]={1,3,5,6,7,8};
+    int b[]={0,4,9,10,11,12};
+    int*c = new int[12];
+
+    int i=0,j=0,k=0,aa=6,bb=6;
+    while(i<aa&&j<bb){
+        if(a[i]<=b[j]){
+            c[k] = a[i];
+            i++;
+        }
+        else{
+            c[k] = b[j];
+            j++;
+        }
+
+        k++;
+    }
+
+   while(i<aa)
+        c[k++] = a[i++];
+    while(j<bb)
+        c[k++] = b[j++];
+
+
+    for(int i=0;i<12;i++){
+        cout<<c[i]<<" ";
+    }
+
+
+
+    return 0;
+}

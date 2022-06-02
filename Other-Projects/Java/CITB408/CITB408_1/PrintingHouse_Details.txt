@@ -1,0 +1,17 @@
+All available Publications that were print today:
+Publication{publicationType=MAGAZINE, paperSize=A4, numberOfPages=20, title='Cars'} ---> 10
+Publication{publicationType=MAGAZINE, paperSize=A4, numberOfPages=20, title='ChessPlay'} ---> 10
+Publication{publicationType=MAGAZINE, paperSize=A2, numberOfPages=15, title='Fishing carps'} ---> 10
+Publication{publicationType=MAGAZINE, paperSize=A2, numberOfPages=30, title='Playboy'} ---> 5
+Made deals:
+Publication{publicationType=BOOK, paperSize=A3, numberOfPages=50, title='Economics'} ---> 10
+Remaining orders:
+Publication{publicationType=MAGAZINE, paperSize=A4, numberOfPages=20, title='Cars'} ---> 5
+Available Publications:
+All available Publications that were print today:
+Publication{publicationType=MAGAZINE, paperSize=A4, numberOfPages=20, title='Cars'} ---> 10
+Publication{publicationType=MAGAZINE, paperSize=A4, numberOfPages=20, title='ChessPlay'} ---> 10
+Publication{publicationType=MAGAZINE, paperSize=A2, numberOfPages=15, title='Fishing carps'} ---> 10
+Publication{publicationType=MAGAZINE, paperSize=A2, numberOfPages=30, title='Playboy'} ---> 5
+Total Earnings = 180.0
+Total costs =  1375.0

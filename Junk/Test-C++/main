@@ -1,0 +1,34 @@
+#include <iostream>
+#include "Employee.h"
+#include "Programmer.h"
+using namespace std;
+
+int main()
+{
+
+
+        Employee a("Martin",5);
+        Employee b;
+
+     a.print();
+     b.print();
+
+                //  b=a;
+
+     Employee c = a;
+     Employee d = b;
+
+     c.print();
+     d.print();
+
+     Programmer m("Martoooo",5,20.5);
+     m.print();
+     Programmer abc(10.5);
+     abc.print();
+
+
+
+
+
+    return 0;
+}

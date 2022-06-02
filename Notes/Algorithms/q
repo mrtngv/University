@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+    char word[100];
+    char target = 'a';
+    int counter = 0;
+    int arr[strlen(word)] = {0};
+
+    std::cin.getline(word, 100);
+    for (int i = 0; i < strlen(word); i++)
+    {
+
+        if (word[i] == target)
+        {
+            arr[i] = 1;
+            counter++;
+        }
+    }
+
+    cout << "number of times  " << counter;
+
+    for (int i = 0; i < strlen(word); i++)
+    {
+
+        cout << arr[i];
+    }
+
+    return 0;
+}

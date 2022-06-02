@@ -1,0 +1,201 @@
+package com.company;
+
+public class Main {
+
+    //Week 2 Task 1
+    public static void quadraticEquation(double a, double b, double c) {
+
+        double d = Math.pow(b, 2) - 4 * a * c;
+        if (d < 0) {
+            System.out.println("There are no real roots");
+        } else if (d == 0) {
+            double root = -b / (2 * a);
+            System.out.println("The root is: " + root);
+        } else {
+            double root1 = (-b + Math.sqrt(d)) / (2 * a);
+            double root2 = (-b - Math.sqrt(d)) / (2 * a);
+            System.out.println("The first root is: " + root1);
+            System.out.println("The second root is: " + root2);
+        }
+    }
+
+    //Week 2 Task 2
+    public static void displayEvenNumbers(int bottom, int top) {
+        if (bottom > top) {
+            System.out.println("The interval is not entered correctly!");
+        } else {
+            if (bottom % 2 != 0) {
+                bottom++;
+            }
+            System.out.println("The list of all even numbers in the interval is: ");
+            for (int counter = bottom; counter <= top; counter += 2) {
+                System.out.print(counter + " ");
+            }
+        }
+    }
+
+    //Week 2 Task 3
+    public static double average(int bottom, int top) {
+        double sum = 0;
+        int counter = 0;
+        for (int i = bottom; i <= top; i++) {
+            if (i % 5 == 0 && i % 3 != 0) {
+                sum += i;
+                counter++;
+            }
+        }
+        if (counter > 0) {
+            return sum / counter;
+        } else {
+            System.out.println("There are no such numbers in the interval!!!");
+            return 0;
+        }
+    }
+
+    //Week 2 Task 4
+    public static void displayDivisors(int number) {
+
+        for (int i = 1; i <= number / 2; i++) {
+            if (number % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+
+    }
+
+    //Week 2 Task 5
+    public static int sumOfDivisors(int number) {
+        int sum = 0;
+        for (int i = 1; i <= number / 2; i++) {
+            if (number % i == 0) {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+
+    //Week 2 Task 6
+    public static boolean isPerfect(int number) {
+        return sumOfDivisors(number) == number;
+    }
+
+    //Week 2 Task 7
+    public static void displayPerfectNumbers(int bottom, int top) {
+        if (bottom > top) {
+            System.out.println("The interval is not entered correctly!");
+        } else {
+            System.out.println("The list of all perfect numbers in the interval is: ");
+            for (int counter = bottom; counter <= top; counter++) {
+                if (isPerfect(counter)) {
+                    System.out.print(counter + " ");
+                }
+            }
+        }
+    }
+
+    //Week 2 Task 8
+    public static boolean isPrime(int number) {
+        for (int counter = 2; counter <= Math.sqrt(number); counter++) {
+            if (number % counter == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //Week 2 Task 9
+    public static void displayPrimeNumbers(int bottom, int top) {
+        for (int counter = bottom; counter <= top; counter++) {
+            if (isPrime(counter)) {
+                System.out.print(counter + " ");
+            }
+        }
+    }
+
+    //Week 2 Task 10
+    public static boolean isLeapYear(int year) {
+        return (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
+    }
+
+    //Week 2 Task 10
+    public static int displayNumberOfDaysInMonth(String month, int year) {
+        int numberOfDays = 0;
+        switch (month) {
+            case "January":
+            case "March":
+            case "May":
+            case "July":
+            case "August":
+            case "October":
+            case "December":
+                numberOfDays = 31;
+                break;
+            case "April":
+            case "June":
+            case "September":
+            case "November":
+                numberOfDays = 30;
+                break;
+            case "February":
+                if (isLeapYear(year)) {
+                    numberOfDays = 29;
+                } else {
+                    numberOfDays = 28;
+                }
+        }
+        return numberOfDays;
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        //Week 2 Task 1
+        quadraticEquation(2, 4, 2);
+
+        //Week 2 Task 2
+        displayEvenNumbers(5, 30);
+        System.out.println();
+
+        //Week 2 Task 3
+        System.out.println("The average value is: " + average(5, 30));
+
+        //Week 2 Task 4
+        int number = 24;
+        System.out.println("The divisors of the number " + number + " are: ");
+        displayDivisors(number);
+        System.out.println();
+
+        //Week 2 Task 5
+        System.out.println("The sum of the divisors of the number " + number + " is " + sumOfDivisors(number));
+
+        //Week 2 Task 6
+        System.out.println("Is the number " + number + " perfect " + isPerfect(number));
+
+        //Week 2 Task 7
+        displayPerfectNumbers(1, 1000);
+        System.out.println();
+
+        //Week 2 Task 8
+        System.out.println(isPrime(number));
+
+        //Week 2 Task 9
+        System.out.println("The prime numbers in the interval are: ");
+        displayPrimeNumbers(2, 900);
+        System.out.println();
+
+        //Week 2 Task 10 Display number of days in a month
+        int year = 2016;
+        String month = "February";
+        if (displayNumberOfDaysInMonth(month, year) > 0) {
+            System.out.println(month + " is " + displayNumberOfDaysInMonth(month, year) + " in " + year + "!");
+        } else {
+            System.out.println("There is no such month in the calendar!");
+        }
+        displayNumberOfDaysInMonth(month, year);
+
+
+    }
+
+}

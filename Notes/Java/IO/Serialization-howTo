@@ -1,0 +1,28 @@
+//ПИСАНЕ
+String filePath = "car.ser";
+
+Car car = new Car(true, 5, 12000, "black");
+try (FileOutputStream fos = new FileOutputStream(filePath);
+ObjectOutputStream outputStream = new ObjectOutputStream(fos);) {
+                    outputStream.writeObject(car);
+} catch (IOException ex) {
+System.err.println(ex);
+}
+
+//////////////////////////////////////////
+//ЧЕТЕНЕ
+String filePath = "car.ser";
+            
+try (FileInputStream fis = new FileInputStream(filePath);
+ObjectInputStream inputStream = new ObjectInputStream(fis);) {
+
+Car car = (Car) inputStream.readObject();
+
+System.out.println(car);
+
+} catch (ClassNotFoundException ex) {
+System.err.println("Class not found: " + ex);
+} catch (IOException ex) {
+System.err.println("IO error: " + ex);
+}
+            

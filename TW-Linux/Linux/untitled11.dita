@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="untitled11">
+    <title>mkdir, rmdir</title>
+    <shortdesc>Yhe commands mkdir and rmdir are making and deleting directories.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_etd_wg1_ypb">
+            <p conref="untitled5.dita#untitled5/o"/>
+            <p conref="untitled5.dita#untitled5/i"/>
+        </prereq>
+        <context><p>Make directory or mkdir is basically making a directory and place it on your
+                current location</p>Remove direcotry or rmdir Just like mkidr only it is doing the
+            opposite thing.<p>
+                <image placement="break" href="a/Screenshot%20from%202021-06-13%2016-36-46.png"
+                    id="image_sgz_n21_ypb"/>
+            </p></context>
+        <steps>
+            <step>
+                <cmd>List the current directory as it is shown on <xref href="untitled6.dita"
+                        >chapter 5</xref></cmd>
+            </step>
+            <step>
+                <cmd>Type mkdir command</cmd>
+            </step>
+            <step>
+                <cmd>Then type name as you want for directory</cmd>
+            </step>
+            <step>
+                <cmd>Press Enter and you will see after you list again, that the new directory is
+                    there</cmd>
+            </step>
+            <step>
+                <cmd>Then type rmdir and the name of the directrory that you created on step 4</cmd>
+            </step>
+            <step>
+                <cmd>Press Enter and you will see after you list, that the directory has been
+                    deleted.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

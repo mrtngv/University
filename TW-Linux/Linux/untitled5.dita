@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="untitled5">
+    <title>pwd</title>
+    <shortdesc>This command is used for knowing where you are on the file system.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_l2h_4rz_xpb">
+            <p id="o">You must have installed Linux or run it with through a virutal machine</p>
+            <p id="i">You must have opened the terminal with the combination of Ctrl+Alt+T or from
+                the menu → terminal</p>
+        </prereq>
+        <context>
+            <p> The first command from this chapter is going to be one of the most important ones.
+                It simply says:</p>
+            <p> Print Working Directory. As we know the directory is just a file, which is
+                representing a content, or dynamic linking with flag which tells us that this file
+                is a directory. We can move through the system when we are going to such a file. So
+                pwd will basically print the current directory which we are in at the moment.</p>
+            <p>
+                <image placement="break" href="a/Screenshot%20from%202021-06-13%2016-33-24.png"
+                    id="image_kfn_ld1_ypb"/>
+            </p>
+        </context>
+        <steps-unordered id="steps-unordered_r2w_ch1_ypb">
+            <step>
+                <cmd>Open Linux Terminal</cmd>
+            </step>
+            <step>
+                <cmd>Enter the command pwd</cmd>
+            </step>
+            <step>
+                <cmd>Type Enter</cmd>
+            </step>
+            <!--The output of the command is the current directory.-->
+        </steps-unordered>
+    </taskbody>
+</task>

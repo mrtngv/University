@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+   }
+   
+   .system-wrapper-absolute {
+     position: absolute;
+     width: 80%;
+     left: 300px;
+     top: 50px;
+   }
+   
+   .input-box{
+    height: 30px;
+   }
+   .system-header-m {
+       border-collapse: collapse;
+       margin: 25px 0;
+       font-size: 0.9em;
+       font-family: sans-serif;
+       min-width: 400px;
+       box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+   }
+   
+   .instance-input {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+   }
+   
+   .instance-input-sys {
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+   }
+   .instance-input-sys-as {
+    margin-left: 2.2rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+   }
+   
+   
+   .instance-input-sys-ass {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 0.5rem;
+   }
+   
+   .instance-input-bttn-as{
+    position:relative;
+    top: 0.9rem;
+   }
+   
+   .instance-input-label {
+    margin-bottom: 0.9rem;
+   }
+   
+   .instance-input-label-as {
+    margin-bottom: 0.2rem;
+    margin-left: 2.5rem;
+   }
+   
+   .system-header-m-component{
+    padding: 16px;
+    font-size: large;
+   }
+   
+   .hrLine {
+    margin-top: 1rem;
+   }
+   
+   .instance-header-m-component{
+    padding-top: 0.5rem;
+    font-size: large;
+   }
+   
+   .instance-header-m-component-info{
+    margin-bottom: 0.5rem;
+   }
+   
+   .instance-header-bold{
+    margin-top: 0.5rem;
+   }
+   
+   .instance-header-add-button{
+    float:right;
+    padding-top: 16px;
+    padding-right: 4px;
+    margin: auto;
+   }
+   
+   .system-header-add-button{
+    padding: 4px;
+    float: right;
+    margin: auto;
+   }
+   
+   .alignRight {
+       text-align: right;
+   }
+   
+   .marginRight {
+    margin-right: .5rem;
+   }
+   
+   .marginLeft {
+    margin-left: 1rem;
+   }
+   
+   .ui5-table-header-row{
+    visibility: hidden;
+   }
+   
+   .total-instances{
+    margin-left: 3em;
+   }
+   
+   .table-system-link{
+    color: #0066cc;
+    text-decoration: none;
+   }
+   #system-table-header {
+    float: left;
+   }
+   
+   ui5-table-cell{
+    margin: auto;
+    vertical-align: middle;
+   }
+   
+   a:link {
+    text-decoration: none;
+   }
+   
+   a:visited {
+      text-decoration: none;
+   }
+   
+   a:hover {
+    text-decoration: underline;
+   }
+   
+   a:active {
+    text-decoration: underline;
+   }
+   
+   .add-new-system-form{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+   }
+   
+   .add-new-system-form-buttons{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+   }
+   .instance-container {
+     display: flex;
+     flex-wrap: wrap;
+     text-align: center;
+   }
+   
+   
+   .label-element {
+     padding-bottom: 0.5rem;
+     flex: 100%;
+   }
+   
+   .input-element {
+     padding-bottom: 2.5rem;
+     flex: 100%;
+   }
+   .input-element-instances {
+     padding-bottom: 1rem;
+     flex: 100%;
+   }
+   .input-box-instance{
+    margin-right: 1rem;
+   }
+   .status-running{
+    color: green;
+   }
+   .status-stopped{
+    color: red;
+   }
+   
+   .instance-form-component-name{
+    display: flex;
+   }
+   .instance-label{
+    padding: 1rem;
+   }
+   .instance-type-radio-btns{
+    padding-right: 1rem;
+   }
+   .instance-wrapper-absolute {
+     position: absolute;
+     width: 80%;
+     left: 300px;
+     top: 50px;
+   
+   }
+   
+   .instance-header-m {
+       margin: 25px 0;
+       font-size: 0.9em;
+       font-family: sans-serif;
+    min-width: 400px;
+       box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    padding: 16px;
+   }
+   
+   .dashboard {
+    display: flex;
+    margin-right: 25rem  ;
+    margin-left: 20rem;
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+   }
+   
+   .dashboard-card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+   }
+   

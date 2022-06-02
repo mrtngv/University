@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="untitled6">
+    <title>ls</title>
+    <shortdesc>Lists all items in the current directory.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_mwr_mg1_ypb">
+            <p conref="untitled5.dita#untitled5/o"/>
+            <p conref="untitled5.dita#untitled5/i"/>
+        </prereq>
+        <context><p>ls is short for list and it does as it says. It lists every file in the current
+                directory.</p><p>Q: For example I have a directory named “A”, and in it there are
+                files called “a1”,”b1”.</p><p> What will be the output from the terminal when I give
+                the input “ls” ?</p> A: The answer is simple. It depends. Read once again the
+            description for the command pwd and you will now why it depends. So if we are in
+            currently in the location of A it will display a1, b1. Otherwise the answer is: what is
+            having in the directory of {pwd}.<p>
+                <image placement="break" href="a/Screenshot%20from%202021-06-13%2016-34-16.png"
+                    id="image_x1b_qd1_ypb"/>
+            </p></context>
+        <steps-unordered id="steps-unordered_f1f_hh1_ypb">
+            <step>
+                <cmd>Open Linux Terminal</cmd>
+            </step>
+            <step>
+                <cmd>Enter the command ls</cmd>
+            </step>
+            <step>
+                <cmd>Type Enter</cmd>
+            </step>
+            <!--You will see a List of files and directories in the current location.-->
+        </steps-unordered>
+    </taskbody>
+</task>

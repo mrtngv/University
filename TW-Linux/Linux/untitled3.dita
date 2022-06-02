@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="untitled3">
+    <title>What is Linux Shell? </title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p> Shell is a program in Linux, which reads an given input from the user {command and
+            parameters} and based on that input gives an output. Shell can be runed from both GUI
+            and CLI. </p>
+        <p>There are Linux distribution that don’t have Graphical Interfaces, so you must learn to
+            navigate easily from the file system from command line first. So, go ahead, install
+            Linux on your computer or run it with Virtual Machine. After the installation press
+            Ctrl,Alt + T, and I will wait for you in the next chapter.</p>
+        <image placement="break" href="a/Screenshot%20from%202021-06-13%2016-31-15.png"
+            id="image_u4p_tqz_xpb"/>
+        <p></p>
+    </conbody>
+</concept>

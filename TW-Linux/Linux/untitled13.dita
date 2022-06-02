@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="untitled13">
+    <title>Cp and Mv</title>
+    <shortdesc>The commands cp and mv are coping and moving files through the file
+        system.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_y5n_zg1_ypb">
+            <p conref="untitled5.dita#untitled5/o"/>
+            <p conref="untitled5.dita#untitled5/i"/>
+        </prereq>
+        <context><p>Cp for copy and mv for move are commands which are used to organize your files
+                in other directories and copy their content.</p><p> the syntax is: </p><p> cp
+                &lt;file to be copied> &lt;where to be copied></p> Mv &lt;file to be moved>
+            &lt;where to be moved> * the mv command can be used also to rename files.</context>
+        <steps>
+            <step>
+                <cmd>Open Linux Terminal</cmd>
+            </step>
+            <step>
+                <cmd>Make a file, like it is described on the previous chapter</cmd>
+            </step>
+            <step>
+                <cmd>Type the command cp to copy the file</cmd>
+            </step>
+            <step>
+                <cmd>Type as a First parameter the name of the file that you are going to copy</cmd>
+            </step>
+            <step>
+                <cmd>Type as a Second Parameter the location which you want the file to be copied
+                    at.</cmd>
+            </step>
+            <step>
+                <cmd>Press Enter</cmd>
+            </step>
+            <step>
+                <cmd>Go to the location which you provided on step 5.</cmd>
+            </step>
+            <step>
+                <cmd>After you list the elements of the current directory, you will find out that
+                    there is a copy of the original file.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

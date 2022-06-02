@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="what_is_linux">
+    <title>What is Linux</title>
+    <shortdesc> </shortdesc>
+    <conbody>
+        <p>Just like Windows and Mac, Linux is an operating system. It is created by Linux Torvalds
+            who was designed the core of the operating system back when he was a student for one of
+            his classes. It is based on UNIX, but it has a greater success, because of the great
+            community, open-source and hey, it is free!</p>
+        <image placement="break" href="OIP.jfif" id="image_fhn_gqz_xpb"/>
+        <p>Open source means that you have unlimited access to the code and you can design
+            everything as you want. And for that reason there are hundreds of different
+            interpretations for Linux, that are called Distributions or distros. Distros may be
+            represent as different flavors, from one User Interface to another, they may have
+            different settings but from the inside they are still Linux. Here is List of the most
+            common ones: </p>
+        <p> - Ubuntu</p>
+        <p> - Linux Mint </p>
+        <p> - Debian</p>
+        <p> - Fedora</p>
+        <p> - Open Suse</p>
+    </conbody>
+</concept>

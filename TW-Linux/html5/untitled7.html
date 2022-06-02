@@ -1,0 +1,27 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2021"><meta name="copyright" content="(C) Copyright 2021"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="concept"><meta name="description" content=""><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="untitled7"><link rel="stylesheet" type="text/css" href="commonltr.css"><title>What are Linux Permissions</title></head><body id="untitled7"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">What are Linux Permissions</h1>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <p class="p">So after we have a concept about the file system and the commands pwd and ls, it is time
+            to know about Linux permissions and command options, flags: </p>
+        <div class="p">
+            <div class="div"> Here we are on our way to learn more about Linux.<p class="p"> So basically, Permissions is
+                    what are the accessibilities from the users to the files.</p><p class="p"> There is the
+                    One User which has all the rights and it is called Super User, but for that
+                    later.</p><p class="p"> On our computer there can be many users that are can access the
+                    file system. But how to control access for all of them? The answer is by putting
+                    them in a groups and describe which groups have access. This is controlled by a
+                    bit mask.</p><p class="p"> Everything in Linux is files!</p><p class="p"> Permissions: </p><p class="p"> 1 –
+                    execute</p><p class="p"> 2 – write</p><p class="p"> 3 – write and execute</p><p class="p"> 4 – read</p><p class="p"> 5 –
+                    read and execute</p><p class="p"> 6 – read and write</p><p class="p"> 7 – read, write and execute –
+                    full accessibility. </p> The bit masking is done by this 8 numbers (0 – has no
+                access to the file). This numbers represents the words read, write, execute, and by
+                bits are 0, 1, 0 – cannot do {read, write or execute} 1 – can do. So if we want the
+                user to can read and execute the number is 5 and it is calculated by 0 and 1s read
+                write execute 1 0 1 -&gt; by 10’s system is equal to 5. That is how it is
+                calculated.</div>
+        </div>
+    </div>
+</article></main></body></html>

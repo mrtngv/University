@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="untitled4">
+    <title>The File System</title>
+    <shortdesc>There are Linux distribution that don’t have Graphical Interfaces, so you must learn
+        to navigate easily from the file system from command line first. So, go ahead, install Linux
+        on your computer or run it with Virtual Machine. After the installation press Ctrl,Alt + T,
+        and I will wait for you in the next chapter.</shortdesc>
+    <conbody>
+        <p></p>
+    </conbody>
+</concept>

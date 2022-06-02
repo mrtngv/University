@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="untitled9">
+    <title>Linux Manual</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>That’s cool, but how to see which command, which options have ? </p>
+        <p> The answer is man. The Linux embedded manual for short man is a command where you can
+            find the all information for Linux in one place. Without using of internet, it is on
+            your computer and it is available 24/7. And it is a command.</p>
+        <p>Q:But how to use man?</p>
+        <p> A1: First try to understand it by yourself. Think. If you not manage to understand the
+            answer it will be provided by A2.</p>
+        <p> A2: man man – how tricky 😊 </p>
+        <p>
+            <image placement="break" href="a/Screenshot%20from%202021-06-13%2016-35-08.png"
+                id="image_uvk_k21_ypb"/>
+        </p>
+    </conbody>
+</concept>

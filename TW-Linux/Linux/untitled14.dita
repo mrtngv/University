@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="untitled14">
+    <title>Other useful commands</title>
+    <shortdesc>Here is a table with five of the most used Linux commands:</shortdesc>
+    <refbody>
+        <table frame="all" rowsep="1" colsep="1" id="table_dbj_f31_ypb">
+            <title/>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>command</entry>
+                        <entry>description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>grep</entry>
+                        <entry>It is the most powerfull searching tool. </entry>
+                    </row>
+                    <row>
+                        <entry>chmod</entry>
+                        <entry>It is used to change the permissions of specific file.</entry>
+                    </row>
+                    <row>
+                        <entry>kill</entry>
+                        <entry>This command terminates a proccess → kill {PID}</entry>
+                    </row>
+                    <row>
+                        <entry>whoami</entry>
+                        <entry>It is used to indentify the user, which is currently loged.</entry>
+                    </row>
+                    <row>
+                        <entry>cat</entry>
+                        <entry>This command outputs the content of the given file.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

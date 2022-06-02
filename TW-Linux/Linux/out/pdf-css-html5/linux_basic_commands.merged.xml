@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='file:/C:/Program Files/Oxygen XML Editor 23/frameworks/dita/DITA-OT3.x/plugins/com.oxygenxml.webhelp.responsive/oxygen-webhelp/app/topic-page-print.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Program Files/Oxygen XML Editor 23/frameworks/dita/css/print/p-dita.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Program Files/Oxygen XML Editor 23/frameworks/dita/DITA-OT3.x/plugins/com.oxygenxml.editlink/pdf-css.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Program%20Files/Oxygen%20XML%20Editor%2023/frameworks/dita/DITA-OT3.x/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/oxygen-print.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Program%20Files/Oxygen%20XML%20Editor%2023/frameworks/dita/DITA-OT3.x/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/notes.css'?>
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:opentopic-index="http://www.idiominc.com/opentopic/index" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:oxy="http://www.oxygenxml.com/extensions/author" xmlns:nd="http://www.oxygenxml.com/css2fo/named-destinations" xmlns:opentopic="http://www.idiominc.com/opentopic" xmlns:css2fo="http://www.oxygenxml.com/css2fo" cascade="merge" class="- map/map " ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d) (topic abbrev-d) (topic delay-d) a(props deliveryTarget) (map ditavalref-d) (map glossref-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" specializations="@props/deliveryTarget" xtrc="map:1;3:6" xtrf="file:/C:/Users/Katy/Desktop/Linux/linux_basic_commands.ditamap" xml:lang="en"><oxy:front-page class="- front-page/front-page "><oxy:front-page-title class="- front-page/front-page-title "><title xmlns:ot-placeholder="http://suite-sol.com/namespaces/ot-placeholder" class="- topic/title ">Linux Basic Commands</title></oxy:front-page-title></oxy:front-page><opentopic:map xmlns:ot-placeholder="http://suite-sol.com/namespaces/ot-placeholder" class="- toc/toc "><oxy:toc-title class="- toc/title " empty="true"/>
+    <title class="- topic/title ">Linux Basic Commands</title>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_1" type="concept"><topicmeta class="- map/topicmeta " data-topic-id="what_is_linux"><resourceid appid="what_is_linux" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_1" class="- topic/navtitle ">What is Linux</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "> </shortdesc></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_2" type="concept"><topicmeta class="- map/topicmeta " data-topic-id="untitled3"><resourceid appid="untitled3" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_2" class="- topic/navtitle ">What is Linux Shell? </navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_3" type="concept"><topicmeta class="- map/topicmeta " data-topic-id="untitled4"><resourceid appid="untitled4" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_3" class="- topic/navtitle ">The File System</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">There are Linux distribution that don’t have Graphical Interfaces, so you must learn         to navigate easily from the file system from command line first. So, go ahead, install Linux         on your computer or run it with Virtual Machine. After the installation press Ctrl,Alt + T,         and I will wait for you in the next chapter.</shortdesc></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_4" type="task"><topicmeta class="- map/topicmeta " data-topic-id="untitled5"><resourceid appid="untitled5" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_4" class="- topic/navtitle ">pwd</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">This command is used for knowing where you are on the file system.</shortdesc></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_5" type="task"><topicmeta class="- map/topicmeta " data-topic-id="untitled6"><resourceid appid="untitled6" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_5" class="- topic/navtitle ">ls</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Lists all items in the current directory.</shortdesc></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_6" type="concept"><topicmeta class="- map/topicmeta " data-topic-id="untitled7"><resourceid appid="untitled7" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_6" class="- topic/navtitle ">What are Linux Permissions</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_7" type="concept"><topicmeta class="- map/topicmeta " data-topic-id="untitled8"><resourceid appid="untitled8" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_7" class="- topic/navtitle ">What are flags?</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_8" type="concept"><topicmeta class="- map/topicmeta " data-topic-id="untitled9"><resourceid appid="untitled9" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_8" class="- topic/navtitle ">Linux Manual</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_9" type="task"><topicmeta class="- map/topicmeta " data-topic-id="untitled10"><resourceid appid="untitled10" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_9" class="- topic/navtitle ">cd</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Change directory command is used to move through the file system.</shortdesc></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_10" type="task"><topicmeta class="- map/topicmeta " data-topic-id="untitled11"><resourceid appid="untitled11" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_10" class="- topic/navtitle ">mkdir, rmdir</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Yhe commands mkdir and rmdir are making and deleting directories.</shortdesc></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_11" type="task"><topicmeta class="- map/topicmeta " data-topic-id="untitled12"><resourceid appid="untitled12" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_11" class="- topic/navtitle ">touch, rm</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">The commands touch and rm are creating and deleting files.</shortdesc></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_12" type="task"><topicmeta class="- map/topicmeta " data-topic-id="untitled13"><resourceid appid="untitled13" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_12" class="- topic/navtitle ">Cp and Mv</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">The commands cp and mv are coping and moving files through the file         system.</shortdesc></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_13" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="untitled14"><resourceid appid="untitled14" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_13" class="- topic/navtitle ">Other useful commands</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Here is a table with five of the most used Linux commands:</shortdesc></topicmeta></topicref>
+</opentopic:map><concept break-before="true" is-chapter="true" class="- topic/topic concept/concept " id="unique_1" topicrefclass="- map/topicref " nd:nd-id="what_is_linux" oid="what_is_linux" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">What is Linux</ph></title>
+    <shortdesc class="- topic/shortdesc "> </shortdesc>
+    <conbody class="- topic/body  concept/conbody ">
+        <p class="- topic/p ">Just like Windows and Mac, Linux is an operating system. It is created by Linux Torvalds
+            who was designed the core of the operating system back when he was a student for one of
+            his classes. It is based on UNIX, but it has a greater success, because of the great
+            community, open-source and hey, it is free!</p>
+        <image class="- topic/image " href="file:/C:/Users/Katy/Desktop/Linux/OIP.jfif" id="unique_1_Connect_42_image_fhn_gqz_xpb" nd:nd-id="image_fhn_gqz_xpb" placement="break"/>
+        <p class="- topic/p ">Open source means that you have unlimited access to the code and you can design
+            everything as you want. And for that reason there are hundreds of different
+            interpretations for Linux, that are called Distributions or distros. Distros may be
+            represent as different flavors, from one User Interface to another, they may have
+            different settings but from the inside they are still Linux. Here is List of the most
+            common ones: </p>
+        <p class="- topic/p "> - Ubuntu</p>
+        <p class="- topic/p "> - Linux Mint </p>
+        <p class="- topic/p "> - Debian</p>
+        <p class="- topic/p "> - Fedora</p>
+        <p class="- topic/p "> - Open Suse</p>
+    </conbody>
+</concept><concept break-before="true" is-chapter="true" class="- topic/topic concept/concept " id="unique_2" topicrefclass="- map/topicref " nd:nd-id="untitled3" oid="untitled3" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">What is Linux Shell? </ph></title>
+    <shortdesc class="- topic/shortdesc "/>
+    <conbody class="- topic/body  concept/conbody ">
+        <p class="- topic/p "> Shell is a program in Linux, which reads an given input from the user {command and
+            parameters} and based on that input gives an output. Shell can be runed from both GUI
+            and CLI. </p>
+        <p class="- topic/p ">There are Linux distribution that don’t have Graphical Interfaces, so you must learn to
+            navigate easily from the file system from command line first. So, go ahead, install
+            Linux on your computer or run it with Virtual Machine. After the installation press
+            Ctrl,Alt + T, and I will wait for you in the next chapter.</p>
+        <image class="- topic/image " href="file:/C:/Users/Katy/Desktop/Linux/a/Screenshot%20from%202021-06-13%2016-31-15.png" id="unique_2_Connect_42_image_u4p_tqz_xpb" nd:nd-id="image_u4p_tqz_xpb" placement="break"/>
+        <p class="- topic/p "/>
+    </conbody>
+</concept><concept break-before="true" is-chapter="true" class="- topic/topic concept/concept " id="unique_3" topicrefclass="- map/topicref " nd:nd-id="untitled4" oid="untitled4" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">The File System</ph></title>
+    <shortdesc class="- topic/shortdesc ">There are Linux distribution that don’t have Graphical Interfaces, so you must learn
+        to navigate easily from the file system from command line first. So, go ahead, install Linux
+        on your computer or run it with Virtual Machine. After the installation press Ctrl,Alt + T,
+        and I will wait for you in the next chapter.</shortdesc>
+    <conbody class="- topic/body  concept/conbody ">
+        <p class="- topic/p "/>
+    </conbody>
+</concept><task break-before="true" is-chapter="true" class="- topic/topic task/task " id="unique_4" topicrefclass="- map/topicref " nd:nd-id="untitled5" oid="untitled5" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">pwd</ph></title>
+    <shortdesc class="- topic/shortdesc ">This command is used for knowing where you are on the file system.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <prereq class="- topic/section task/prereq " id="unique_4_Connect_42_prereq_l2h_4rz_xpb" nd:nd-id="prereq_l2h_4rz_xpb">
+            <p class="- topic/p " id="unique_4_Connect_42_o" nd:nd-id="o">You must have installed Linux or run it with through a virutal machine</p>
+            <p class="- topic/p " id="unique_4_Connect_42_i" nd:nd-id="i">You must have opened the terminal with the combination of Ctrl+Alt+T or from
+                the menu → terminal</p>
+        </prereq>
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "> The first command from this chapter is going to be one of the most important ones.
+                It simply says:</p>
+            <p class="- topic/p "> Print Working Directory. As we know the directory is just a file, which is
+                representing a content, or dynamic linking with flag which tells us that this file
+                is a directory. We can move through the system when we are going to such a file. So
+                pwd will basically print the current directory which we are in at the moment.</p>
+            <p class="- topic/p ">
+                <image class="- topic/image " href="file:/C:/Users/Katy/Desktop/Linux/a/Screenshot%20from%202021-06-13%2016-33-24.png" id="unique_4_Connect_42_image_kfn_ld1_ypb" nd:nd-id="image_kfn_ld1_ypb" placement="break"/>
+            </p>
+        </context>
+        <steps-unordered class="- topic/ul task/steps-unordered " id="unique_4_Connect_42_steps-unordered_r2w_ch1_ypb" nd:nd-id="steps-unordered_r2w_ch1_ypb">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Open Linux Terminal</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Enter the command pwd</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Type Enter</cmd>
+            </step>
+            
+        </steps-unordered>
+    </taskbody>
+</task><task break-before="true" is-chapter="true" class="- topic/topic task/task " id="unique_5" topicrefclass="- map/topicref " nd:nd-id="untitled6" oid="untitled6" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">ls</ph></title>
+    <shortdesc class="- topic/shortdesc ">Lists all items in the current directory.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <prereq class="- topic/section task/prereq " id="unique_5_Connect_42_prereq_mwr_mg1_ypb" nd:nd-id="prereq_mwr_mg1_ypb">
+            <p class="- topic/p ">You must have installed Linux or run it with through a virutal machine</p>
+            <p class="- topic/p ">You must have opened the terminal with the combination of Ctrl+Alt+T or from
+                the menu → terminal</p>
+        </prereq>
+        <context class="- topic/section task/context "><p class="- topic/p ">ls is short for list and it does as it says. It lists every file in the current
+                directory.</p><p class="- topic/p ">Q: For example I have a directory named “A”, and in it there are
+                files called “a1”,”b1”.</p><p class="- topic/p "> What will be the output from the terminal when I give
+                the input “ls” ?</p> A: The answer is simple. It depends. Read once again the
+            description for the command pwd and you will now why it depends. So if we are in
+            currently in the location of A it will display a1, b1. Otherwise the answer is: what is
+            having in the directory of {pwd}.<p class="- topic/p ">
+                <image class="- topic/image " href="file:/C:/Users/Katy/Desktop/Linux/a/Screenshot%20from%202021-06-13%2016-34-16.png" id="unique_5_Connect_42_image_x1b_qd1_ypb" nd:nd-id="image_x1b_qd1_ypb" placement="break"/>
+            </p></context>
+        <steps-unordered class="- topic/ul task/steps-unordered " id="unique_5_Connect_42_steps-unordered_f1f_hh1_ypb" nd:nd-id="steps-unordered_f1f_hh1_ypb">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Open Linux Terminal</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Enter the command ls</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Type Enter</cmd>
+            </step>
+            
+        </steps-unordered>
+    </taskbody>
+</task><concept break-before="true" is-chapter="true" class="- topic/topic concept/concept " id="unique_6" topicrefclass="- map/topicref " nd:nd-id="untitled7" oid="untitled7" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">What are Linux Permissions</ph></title>
+    <shortdesc class="- topic/shortdesc "/>
+    <conbody class="- topic/body  concept/conbody ">
+        <p class="- topic/p ">So after we have a concept about the file system and the commands pwd and ls, it is time
+            to know about Linux permissions and command options, flags: </p>
+        <p class="- topic/p ">
+            <div class="- topic/div "> Here we are on our way to learn more about Linux.<p class="- topic/p "> So basically, Permissions is
+                    what are the accessibilities from the users to the files.</p><p class="- topic/p "> There is the
+                    One User which has all the rights and it is called Super User, but for that
+                    later.</p><p class="- topic/p "> On our computer there can be many users that are can access the
+                    file system. But how to control access for all of them? The answer is by putting
+                    them in a groups and describe which groups have access. This is controlled by a
+                    bit mask.</p><p class="- topic/p "> Everything in Linux is files!</p><p class="- topic/p "> Permissions: </p><p class="- topic/p "> 1 –
+                    execute</p><p class="- topic/p "> 2 – write</p><p class="- topic/p "> 3 – write and execute</p><p class="- topic/p "> 4 – read</p><p class="- topic/p "> 5 –
+                    read and execute</p><p class="- topic/p "> 6 – read and write</p><p class="- topic/p "> 7 – read, write and execute –
+                    full accessibility. </p> The bit masking is done by this 8 numbers (0 – has no
+                access to the file). This numbers represents the words read, write, execute, and by
+                bits are 0, 1, 0 – cannot do {read, write or execute} 1 – can do. So if we want the
+                user to can read and execute the number is 5 and it is calculated by 0 and 1s read
+                write execute 1 0 1 -&gt; by 10’s system is equal to 5. That is how it is
+                calculated.</div>
+        </p>
+    </conbody>
+</concept><concept break-before="true" is-chapter="true" class="- topic/topic concept/concept " id="unique_7" topicrefclass="- map/topicref " nd:nd-id="untitled8" oid="untitled8" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">What are flags?</ph></title>
+    <shortdesc class="- topic/shortdesc "/>
+    <conbody class="- topic/body  concept/conbody ">
+        <p class="- topic/p "> Flags are simply options to the commands. As far we know how to list the files that are
+            in the current directory. It is done by ls command. We also know a little bit about
+            permissions. So let’s see how we can see the permissions on the files. It is done by
+            giving the command ls a flag l – for long</p>
+        <p class="- topic/p ">ls -l</p>
+        <p class="- topic/p ">Now we can see a list of files with their permissions and there are rwe (read write
+            execute), </p>
+        <p class="- topic/p "> but why are they repeated 3 times.</p>
+        <p class="- topic/p "> It is because the permissions are grouped by: Owner of the file rights, Group Rights,
+            Other Rights.</p>
+    </conbody>
+</concept><concept break-before="true" is-chapter="true" class="- topic/topic concept/concept " id="unique_8" topicrefclass="- map/topicref " nd:nd-id="untitled9" oid="untitled9" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">Linux Manual</ph></title>
+    <shortdesc class="- topic/shortdesc "/>
+    <conbody class="- topic/body  concept/conbody ">
+        <p class="- topic/p ">That’s cool, but how to see which command, which options have ? </p>
+        <p class="- topic/p "> The answer is man. The Linux embedded manual for short man is a command where you can
+            find the all information for Linux in one place. Without using of internet, it is on
+            your computer and it is available 24/7. And it is a command.</p>
+        <p class="- topic/p ">Q:But how to use man?</p>
+        <p class="- topic/p "> A1: First try to understand it by yourself. Think. If you not manage to understand the
+            answer it will be provided by A2.</p>
+        <p class="- topic/p "> A2: man man – how tricky 😊 </p>
+        <p class="- topic/p ">
+            <image class="- topic/image " href="file:/C:/Users/Katy/Desktop/Linux/a/Screenshot%20from%202021-06-13%2016-35-08.png" id="unique_8_Connect_42_image_uvk_k21_ypb" nd:nd-id="image_uvk_k21_ypb" placement="break"/>
+        </p>
+    </conbody>
+</concept><task break-before="true" is-chapter="true" class="- topic/topic task/task " id="unique_9" topicrefclass="- map/topicref " nd:nd-id="untitled10" oid="untitled10" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">cd</ph></title>
+    <shortdesc class="- topic/shortdesc ">Change directory command is used to move through the file system.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <prereq class="- topic/section task/prereq " id="unique_9_Connect_42_prereq_jph_sg1_ypb" nd:nd-id="prereq_jph_sg1_ypb">
+            <p class="- topic/p ">You must have installed Linux or run it with through a virutal machine</p>
+            <p class="- topic/p ">You must have opened the terminal with the combination of Ctrl+Alt+T or from
+                the menu → terminal</p>
+        </prereq>
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "> The cd or change directory is used to move through the file system easily. For
+                example if there you are located in the Downloads and there is directory called
+                potato and you want to go there you have to enter the command cd potato</p>
+            <p class="- topic/p ">
+                <image class="- topic/image " href="file:/C:/Users/Katy/Desktop/Linux/a/Screenshot%20from%202021-06-13%2016-36-00.png" id="unique_9_Connect_42_image_l4y_c21_ypb" nd:nd-id="image_l4y_c21_ypb" placement="break"/>
+            </p>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Open Linux Terminal</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Type the command cd</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Type the name of the directory you want to enter as a first parameter of the
+                    command</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Press Enter</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">List all of the directories to make sure you are on the right direcotory</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task><task break-before="true" is-chapter="true" class="- topic/topic task/task " id="unique_10" topicrefclass="- map/topicref " nd:nd-id="untitled11" oid="untitled11" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">mkdir, rmdir</ph></title>
+    <shortdesc class="- topic/shortdesc ">Yhe commands mkdir and rmdir are making and deleting directories.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <prereq class="- topic/section task/prereq " id="unique_10_Connect_42_prereq_etd_wg1_ypb" nd:nd-id="prereq_etd_wg1_ypb">
+            <p class="- topic/p ">You must have installed Linux or run it with through a virutal machine</p>
+            <p class="- topic/p ">You must have opened the terminal with the combination of Ctrl+Alt+T or from
+                the menu → terminal</p>
+        </prereq>
+        <context class="- topic/section task/context "><p class="- topic/p ">Make directory or mkdir is basically making a directory and place it on your
+                current location</p>Remove direcotry or rmdir Just like mkidr only it is doing the
+            opposite thing.<p class="- topic/p ">
+                <image class="- topic/image " href="file:/C:/Users/Katy/Desktop/Linux/a/Screenshot%20from%202021-06-13%2016-36-46.png" id="unique_10_Connect_42_image_sgz_n21_ypb" nd:nd-id="image_sgz_n21_ypb" placement="break"/>
+            </p></context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">List the current directory as it is shown on <xref class="- topic/xref " href="#unique_5" type="task"><?ditaot usertext?>chapter 5<?ditaot genshortdesc?><desc class="- topic/desc ">Lists all items in the current directory.</desc></xref></cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Type mkdir command</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Then type name as you want for directory</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Press Enter and you will see after you list again, that the new directory is
+                    there</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Then type rmdir and the name of the directrory that you created on step 4</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Press Enter and you will see after you list, that the directory has been
+                    deleted.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task><task break-before="true" is-chapter="true" class="- topic/topic task/task " id="unique_11" topicrefclass="- map/topicref " nd:nd-id="untitled12" oid="untitled12" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">touch, rm</ph></title>
+    <shortdesc class="- topic/shortdesc ">The commands touch and rm are creating and deleting files.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <prereq class="- topic/section task/prereq " id="unique_11_Connect_42_prereq_vdp_xg1_ypb" nd:nd-id="prereq_vdp_xg1_ypb">
+            <p class="- topic/p ">You must have installed Linux or run it with through a virutal machine</p>
+            <p class="- topic/p ">You must have opened the terminal with the combination of Ctrl+Alt+T or from
+                the menu → terminal</p>
+        </prereq>
+        <context class="- topic/section task/context ">
+            <p class="- topic/p ">touch is using for two things. The first purpose is to make file by doing</p>
+            <p class="- topic/p "> touch &lt;name of the file&gt; and it place an empty file in your current location. And
+                the second thing it does is to change the -last modified time of the file to the
+                time when the command is executed.</p>
+            <p class="- topic/p "/>
+            <p class="- topic/p ">The command rm or remove is used to remove a single file from your current locations.
+                Just provide the command a parameter – the name of the file which you want to be
+                removed and it is done. The most common used flags of the remove command are -r and
+                -f -r -&gt; recursively it removes every file from the directory of your choice . -f -&gt;
+                force, without asking for permissions on every step of the deleting process. Try rm
+                -rf / 😊 or Or don’t ! // It will remove our your files including the Linux OS.</p>
+            <p class="- topic/p ">
+                <image class="- topic/image " href="file:/C:/Users/Katy/Desktop/Linux/a/Screenshot%20from%202021-06-13%2016-37-55.png" id="unique_11_Connect_42_image_yrm_z21_ypb" nd:nd-id="image_yrm_z21_ypb" placement="break"/>
+            </p>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Open Linux terminal</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Type the comand touch and then the name of the file you want to create or
+                    update</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Press Enter</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">After you list the items in the current directory you will seethat the file is
+                    either created or updated</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Type the command rm, to remove the file you recently created, then type the
+                    name of the file</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Press Enter</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">You will see, as you list the items in the current directory, that your file is
+                    deleted.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task><task break-before="true" is-chapter="true" class="- topic/topic task/task " id="unique_12" topicrefclass="- map/topicref " nd:nd-id="untitled13" oid="untitled13" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">Cp and Mv</ph></title>
+    <shortdesc class="- topic/shortdesc ">The commands cp and mv are coping and moving files through the file
+        system.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <prereq class="- topic/section task/prereq " id="unique_12_Connect_42_prereq_y5n_zg1_ypb" nd:nd-id="prereq_y5n_zg1_ypb">
+            <p class="- topic/p ">You must have installed Linux or run it with through a virutal machine</p>
+            <p class="- topic/p ">You must have opened the terminal with the combination of Ctrl+Alt+T or from
+                the menu → terminal</p>
+        </prereq>
+        <context class="- topic/section task/context "><p class="- topic/p ">Cp for copy and mv for move are commands which are used to organize your files
+                in other directories and copy their content.</p><p class="- topic/p "> the syntax is: </p><p class="- topic/p "> cp
+                &lt;file to be copied&gt; &lt;where to be copied&gt;</p> Mv &lt;file to be moved&gt;
+            &lt;where to be moved&gt; * the mv command can be used also to rename files.</context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Open Linux Terminal</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Make a file, like it is described on the previous chapter</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Type the command cp to copy the file</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Type as a First parameter the name of the file that you are going to copy</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Type as a Second Parameter the location which you want the file to be copied
+                    at.</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Press Enter</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Go to the location which you provided on step 5.</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">After you list the elements of the current directory, you will find out that
+                    there is a copy of the original file.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task><reference break-before="true" is-chapter="true" class="- topic/topic       reference/reference " id="unique_13" topicrefclass="- map/topicref " nd:nd-id="untitled14" oid="untitled14" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">Other useful commands</ph></title>
+    <shortdesc class="- topic/shortdesc ">Here is a table with five of the most used Linux commands:</shortdesc>
+    <refbody class="- topic/body        reference/refbody ">
+        <table class="- topic/table " colsep="1" frame="all" id="unique_13_Connect_42_table_dbj_f31_ypb" nd:nd-id="table_dbj_f31_ypb" rowsep="1">
+            <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper "/></title>
+            <tgroup class="- topic/tgroup " cols="2">
+                <colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="1*" xtrc="colspec:1;10:65" xtrf="file:/C:/Users/Katy/Desktop/Linux/untitled14.dita" style="width:50%;"/>
+                <colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="1*" xtrc="colspec:2;11:65" xtrf="file:/C:/Users/Katy/Desktop/Linux/untitled14.dita" style="width:50%;"/>
+                <thead class="- topic/thead ">
+                    <row class="- topic/row ">
+                        <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1">command</entry>
+                        <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1">description</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody ">
+                    <row class="- topic/row ">
+                        <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2">grep</entry>
+                        <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2">It is the most powerfull searching tool. </entry>
+                    </row>
+                    <row class="- topic/row ">
+                        <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="3">chmod</entry>
+                        <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="3">It is used to change the permissions of specific file.</entry>
+                    </row>
+                    <row class="- topic/row ">
+                        <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="4">kill</entry>
+                        <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="4">This command terminates a proccess → kill {PID}</entry>
+                    </row>
+                    <row class="- topic/row ">
+                        <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="5">whoami</entry>
+                        <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="5">It is used to indentify the user, which is currently loged.</entry>
+                    </row>
+                    <row class="- topic/row ">
+                        <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="6">cat</entry>
+                        <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="6">This command outputs the content of the given file.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference></map>

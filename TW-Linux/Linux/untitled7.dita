@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="untitled7">
+    <title>What are Linux Permissions</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>So after we have a concept about the file system and the commands pwd and ls, it is time
+            to know about Linux permissions and command options, flags: </p>
+        <p>
+            <div> Here we are on our way to learn more about Linux.<p> So basically, Permissions is
+                    what are the accessibilities from the users to the files.</p><p> There is the
+                    One User which has all the rights and it is called Super User, but for that
+                    later.</p><p> On our computer there can be many users that are can access the
+                    file system. But how to control access for all of them? The answer is by putting
+                    them in a groups and describe which groups have access. This is controlled by a
+                    bit mask.</p><p> Everything in Linux is files!</p><p> Permissions: </p><p> 1 –
+                    execute</p><p> 2 – write</p><p> 3 – write and execute</p><p> 4 – read</p><p> 5 –
+                    read and execute</p><p> 6 – read and write</p><p> 7 – read, write and execute –
+                    full accessibility. </p> The bit masking is done by this 8 numbers (0 – has no
+                access to the file). This numbers represents the words read, write, execute, and by
+                bits are 0, 1, 0 – cannot do {read, write or execute} 1 – can do. So if we want the
+                user to can read and execute the number is 5 and it is calculated by 0 and 1s read
+                write execute 1 0 1 -> by 10’s system is equal to 5. That is how it is
+                calculated.</div>
+        </p>
+    </conbody>
+</concept>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="untitled8">
+    <title>What are flags?</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p> Flags are simply options to the commands. As far we know how to list the files that are
+            in the current directory. It is done by ls command. We also know a little bit about
+            permissions. So let’s see how we can see the permissions on the files. It is done by
+            giving the command ls a flag l – for long</p>
+        <p>ls -l</p>
+        <p>Now we can see a list of files with their permissions and there are rwe (read write
+            execute), </p>
+        <p> but why are they repeated 3 times.</p>
+        <p> It is because the permissions are grouped by: Owner of the file rights, Group Rights,
+            Other Rights.</p>
+    </conbody>
+</concept>

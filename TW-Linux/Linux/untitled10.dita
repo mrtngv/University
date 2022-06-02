@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="untitled10">
+    <title>cd</title>
+    <shortdesc>Change directory command is used to move through the file system.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_jph_sg1_ypb">
+            <p conref="untitled5.dita#untitled5/o"/>
+            <p conref="untitled5.dita#untitled5/i"/>
+        </prereq>
+        <context>
+            <p> The cd or change directory is used to move through the file system easily. For
+                example if there you are located in the Downloads and there is directory called
+                potato and you want to go there you have to enter the command cd potato</p>
+            <p>
+                <image placement="break" href="a/Screenshot%20from%202021-06-13%2016-36-00.png"
+                    id="image_l4y_c21_ypb"/>
+            </p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open Linux Terminal</cmd>
+            </step>
+            <step>
+                <cmd>Type the command cd</cmd>
+            </step>
+            <step>
+                <cmd>Type the name of the directory you want to enter as a first parameter of the
+                    command</cmd>
+            </step>
+            <step>
+                <cmd>Press Enter</cmd>
+            </step>
+            <step>
+                <cmd>List all of the directories to make sure you are on the right direcotory</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

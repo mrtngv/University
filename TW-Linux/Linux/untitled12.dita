@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="untitled12">
+    <title>touch, rm</title>
+    <shortdesc>The commands touch and rm are creating and deleting files.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_vdp_xg1_ypb">
+            <p conref="untitled5.dita#untitled5/o"/>
+            <p conref="untitled5.dita#untitled5/i"/>
+        </prereq>
+        <context>
+            <p>touch is using for two things. The first purpose is to make file by doing</p>
+            <p> touch &lt;name of the file> and it place an empty file in your current location. And
+                the second thing it does is to change the -last modified time of the file to the
+                time when the command is executed.</p>
+            <p/>
+            <p>The command rm or remove is used to remove a single file from your current locations.
+                Just provide the command a parameter – the name of the file which you want to be
+                removed and it is done. The most common used flags of the remove command are -r and
+                -f -r -> recursively it removes every file from the directory of your choice . -f ->
+                force, without asking for permissions on every step of the deleting process. Try rm
+                -rf / 😊 or Or don’t ! // It will remove our your files including the Linux OS.</p>
+            <p>
+                <image placement="break" href="a/Screenshot%20from%202021-06-13%2016-37-55.png"
+                    id="image_yrm_z21_ypb"/>
+            </p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open Linux terminal</cmd>
+            </step>
+            <step>
+                <cmd>Type the comand touch and then the name of the file you want to create or
+                    update</cmd>
+            </step>
+            <step>
+                <cmd>Press Enter</cmd>
+            </step>
+            <step>
+                <cmd>After you list the items in the current directory you will seethat the file is
+                    either created or updated</cmd>
+            </step>
+            <step>
+                <cmd>Type the command rm, to remove the file you recently created, then type the
+                    name of the file</cmd>
+            </step>
+            <step>
+                <cmd>Press Enter</cmd>
+            </step>
+            <step>
+                <cmd>You will see, as you list the items in the current directory, that your file is
+                    deleted.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

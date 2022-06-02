@@ -1,0 +1,165 @@
+.container form {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-btn {
+    width: 13rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.login-label,
+.login-input,
+.register-input,
+.register-label,
+.profile-label,
+.profile-input {
+    margin-bottom: 5px;
+}
+
+.inner-container {
+    padding: 48px;
+    display: flex;
+    flex-direction: row;
+}
+
+.login, .register {
+    padding: 0;
+}
+
+.image-container {
+    margin-top: -135px;
+}
+
+.register .image-container {
+    margin-top: -50px;
+}
+
+.image-container img {
+    width: 600px;
+}
+
+.login img, .register img {
+    opacity: 0.9;
+}
+
+.login form, .register form {
+    padding: 48px 20px 48px 48px;
+    background-color: white;
+}
+
+.register form {
+    padding-right: 35px;
+    padding-bottom: 30px;
+}
+
+.inner-container span.error {
+    font-size: 13px;
+    color: #fd6204;
+    font-weight: 500;
+    margin-bottom: 12px;
+    letter-spacing: .2px;
+    font-family: "72override",var(--sapFontFamily);
+}
+
+.register-input.error ,
+.login-input.error,
+.profile-input.error {
+    box-shadow: 0 0 2px 2px rgb(253 98 3 / 25%);
+    border: 1px solid #fd6204;
+}
+
+#register-link {
+    padding-left: 2px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+#response-msg {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+    width: 190px;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: white;
+    font-family: "72override",var(--sapFontFamily);
+}
+
+#response-msg.success {
+    background-color: #008000c2;
+}
+
+#response-msg.error {
+    font-size: 15px;
+    background-color: #ff0000cc;
+}
+
+.login-form-element, .register-form-element {
+    min-height: 78px;
+}
+
+@media only screen and (max-width: 767px) {
+    .login form, .register form {
+        padding: 30px;
+    }
+
+    .inner-container {
+        padding: 30px 70px;
+    }
+
+    .register .inner-container {
+        padding: 30px 65px;
+    }
+
+    .image-container img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .inner-container {
+        padding: 80px 0 0 250px;
+    }
+
+    .image-container img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .inner-container {
+        padding: 110px 0 0 400px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .inner-container {
+        padding: 100px 0 0 60px;
+    }
+
+    .image-container img {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    /* .inner-container {
+        padding: 110px 0 0 200px;
+    } */
+
+    .register .inner-container {
+        padding-top: 80px;
+    }
+
+    .login form, .register form {
+        padding: 48px 30px 48px 58px;
+    }
+
+    .log-form, .reg-form {
+        margin-right: 10%;
+    }
+}

@@ -1,0 +1,74 @@
+.main-section {
+    display: flex;
+    padding: 3rem;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.step-title {
+    padding-bottom: 2rem;
+}
+
+.sub-title {
+    padding-bottom: 0.5rem;
+}
+
+.to-step-button {
+    margin-top: 1rem;
+}
+
+.input, .selection {
+    margin-bottom: 1rem;
+    width: 20rem;
+}
+
+.flex-container-input {
+    display: flex;
+    flex-direction: row;
+}
+
+#firmNameInput, #receiverFirmNameInput, #orderComment {
+    width: 41.5rem;
+}
+
+#senderLocationInput, #receiverLocationInput,
+ #alternativeLocationInput, #returnCashLocationInput {
+    width: 15rem;
+}
+
+#senderAddressInput, #receiverAddressInput, #alternativeAddressInput, #returnCashAddressInput, 
+#sender-office-select, #receiver-office-select, #alternative-office-select, #return-cash-office-select{
+    width: 25rem;
+}
+
+.second-flex-input-item {
+    padding-left: 1.5rem;
+}
+
+#submit-button {
+    display: inline;
+    float: right;
+    margin-left: 1rem;
+}
+
+#declineRequestButton {
+    margin-left: 1rem;
+}
+
+
+.step-first-distance{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.step-distance{
+    padding: 0rem 2rem;
+}
+
+#first-message-strip {
+    padding-bottom: 0.3rem;
+}
+
+.message-strip {
+    padding-bottom: 1rem;
+}

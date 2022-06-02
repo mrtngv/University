@@ -1,0 +1,144 @@
+.track-package-container {
+    margin: 60px 100px;
+    display: inline-block;
+    position: relative;
+    width: 65%;
+    align-content: space-between;
+}
+
+.track-package-container img {
+    width: 15%;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.track-package-card-content {
+    padding: 40px;
+    width: 30%;
+    display: inline-block;
+}
+
+#track-package-input {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#track-package-btn {
+    width: 100%;
+}
+
+#package-info {
+    display: none;
+    margin-top: 40px;
+}
+
+.package-header-wrapper {
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+    padding-left: 10px;
+    line-height: 40px;
+}
+
+.package-header {
+    vertical-align: super;
+} 
+
+.package-table {
+    font-size: 10px;
+    max-height: 495px;
+    height: 38vh;
+    overflow-x: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .track-package-card-content {
+        width: 100%;
+        width: -moz-available;    
+        width: -webkit-fill-available;
+        width: fill-available;
+        padding: 5px;
+    }
+
+    .track-package-container {
+        margin: 30px 0 60px 60px;
+        width: 83%;
+    }
+
+    .track-package-container img {
+        display: none;
+    }
+
+    .package-header {
+        display: block;
+    }
+
+    #edit-package {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .track-package-card-content {
+        width: 50%;
+    }
+
+    .track-package-container {
+        margin-left: 105px;
+    }
+    
+    .track-package-container img {
+        width: 25%;
+        vertical-align: baseline;
+    }
+
+    .package-header {
+        display: inline-block;
+    }
+
+    #edit-package {
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .track-package-container {
+        width: 55%;
+        margin-left: 260px;
+        margin-top: 30px;
+    }
+
+    .track-package-container img {
+        width: 20%;
+    }
+
+    .track-package-card-content {
+        padding: 28px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .track-package-container img {
+        vertical-align: top;
+    }
+
+    .track-package-container {
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .track-package-container img {
+        width: 200px;
+    }
+
+    .track-package-container {
+        margin: 48px 48px 0;
+    }
+
+    .track-package-card-content {
+        padding: 40px;
+    }
+}
+

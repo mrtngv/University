@@ -1,0 +1,79 @@
+.packages-view-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+}
+
+.colHeader {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.packages-view-table {
+    border: 0px solid;
+    box-shadow: 2px 5px rgb(233, 233, 233);
+
+}
+
+ui5-flexible-column-layout#fcl {
+    --_ui5_fcl_solid_bg: #ffffff;
+    overflow-y: auto;
+    height: 70vh;
+}
+
+.start-column {
+    overflow-y: auto;
+}
+
+.information-container {
+    display: flex;
+}
+
+.first-information-child {
+    padding-right: 2rem;
+}
+
+.information-row {
+    padding-top: 1px;
+}
+
+.information-item {
+    display: inline-block;
+}
+
+packages-header-bar {
+    display: flex;
+    padding: 3rem 5rem;
+}
+
+.packages-flexible-column-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+}
+
+.delivery-information {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.filter-container {
+    width: 100%;
+}
+
+.filter-container ui5-title {
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+.filter-contents {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1.8rem;
+}
+
+.filter-contents .input {
+    width: 25%;
+}

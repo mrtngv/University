@@ -1,0 +1,60 @@
+.packages-view-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+}
+
+.ui5-card-replica {
+    font-family: "72override",var(--sapFontFamily);
+    font-size: var(--sapFontSize);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.edit-package-card-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.container-box {
+    padding: 1rem 0 1rem 0;
+}
+
+.first-edit-container-item {
+    padding-right: 8rem;
+}
+
+.second-container-item {
+    padding-left: 18rem;
+}
+
+.information-row {
+    padding-bottom: 0.5rem;
+}
+
+
+#editReceiverLocationInput, #editAlternativeLocationInput {
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom:solid 1px gray;
+    z-index: 1;
+}
+
+#approve-edit-package-button {
+    margin-right: 0.5rem;
+}
